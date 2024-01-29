@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="/css/bootstrap.css">
+   <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+   <!-- Modal -->
+   <div class="modal" id="modalLogin" tabindex="-1">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title">Entre na sua conta</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+               <form action="">
+                  <div class="form-group">
+                     <label for="login">Login</label>
+                     <input type="text" class="form-control" name="login" id="login">
+                     <small class="form-text text-muted">Nunca passe seus login e senha para terceiros.</small>
+                  </div>
+                  <div class="form-group">
+                     <label for="senha">Senha</label>
+                     <input type="password" class="form-control" name="senha" id="senha">
+                  </div>
+                  <div>
+                     <button type="button" class="btn btn-primary">Entrar na conta</button>
+                     <small class="form-text text-muted">Esqueceu a senha?<a href="#">Clique aqui</a></small>
+                  </div>
+               </form>
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <!-- fecha Modal -->
+
+   <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light py-3 box-shadow">
+      <a href="index.html" class="navbar-brand"><img src="/img/caravan.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir Navegação">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-itemdropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Locais</a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="local.html">California</a>
+                  <a class="dropdown-item" href="local.html">Paris</a>
+                  <a class="dropdown-item" href="local.html">Dublin</a>
+               </div>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="planos.html">Planos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+            <li class="nav-item"><a data-toggle="modal" data-target="#modalLogin" class="nav-link" href="#">Login</a></li>
+            <li class="nav-item"><a class="btn btn-outline-primary ml-md-2" href="inscricao.html">Inscreva-se</a></li>
+         </ul>
+      </div>
+   </nav>
+
+   <section class="container">
+      <div class="my-5 text-center">
+         <span class="h6 d-block">POSSUI ALGUMA DÚVIDA?</span>
+         <h2 class="display-4 text-primary">Fale Conosco</h2>
+      </div>
+      <div class="row">
+         <div class="col-md mb-5">
+            <form class="bg-light rounded b-4 p-3 box-shadow">
+               <div class="form-group">
+                  <label for="clienteNome">Nome</label>
+                  <input type="text" class="form-control" id="clienteNome">
+               </div>
+               <div class="form-group">
+                  <label for="clienteEmail">Email</label>
+                  <input type="email" class="form-control" id="clienteEmail">
+               </div>
+               <div class="form-group">
+                  <label for="mensagem">Mensagem</label>
+                  <textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
+               </div>
+
+               <button type="submit" class="btn btn-primary text-nowrap">Enviar Mensagem</button>
+            </form>
+         </div>
+
+         <div class="col-md">
+            <h2 class="h6">NOSSO ENDEREÇO</h2>
+            <a href="https://www.google.com.br/maps/@-21.561344,-45.432832,13z?entry=ttu"><img class="img-fluid box-shadow rounded mb-4" src="/img/mapa.png" alt="mapa"></a>
+            <div class="row">
+               <div class="col-6">
+                  <h2 class="h6">DADOS DE CONTATO</h2>
+                  <ul class="list-unstyled text-secondary">
+                     <li>caravan@caravan.com.br</li>
+                     <li>21 9999-9999</li>
+                     <li>De Seg. à Sex. das 8h às 18h</li>
+                  </ul>
+               </div>
+               <div class="col-6">
+                  <h2 class="h6">REDES SOCIAIS</h2>
+                  <ul class="list-unstyled" style="max-width:140px;">
+                     <li><a href="#" class="btn btn-outline-secondary btn-sm btn-block mb-2">Facebook</a></li>
+                     <li><a href="#" class="btn btn-outline-secondary btn-sm btn-block mb-2">Twitter</a></li>
+                     <li><a href="#" class="btn btn-outline-secondary btn-sm btn-block">Instagram</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="container">
+      <div class="my-5 text-center">
+         <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+         <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+      </div>
+      <div class="row justify-content-center">
+         <div class="col-md-6 accordion" id="perguntas">
+            <div>
+               <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                     <button class="btn btn-link btn-clock text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">É possível cancelar a viagem?
+                     </button>
+                  </h2>
+               </div>
+               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#perguntas">
+                  <div class="card-body">
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, a.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div>
+               <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                     <button class="btn btn-link btn-clock text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Qual a garantia que tenho se perder o voo?
+                     </button>
+                  </h2>
+               </div>
+               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#perguntas">
+                  <div class="card-body">
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto ab natus iste pariatur earum! Numquam?
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div>
+               <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                     <button class="btn btn-link btn-clock text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Qual a principal form de viagem?
+                     </button>
+                  </h2>
+               </div>
+               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#perguntas">
+                  <div class="card-body">
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae impedit sequi ullam voluptatum ducimus sit aut unde, eius dolorum.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div>
+               <div class="card-header" id="headingFor">
+                  <h2 class="mb-0">
+                     <button class="btn btn-link btn-clock text-left" type="button" data-toggle="collapse" data-target="#collapseFor" aria-expanded="false" aria-controls="collapseFor">Qual o melhor destino de viagem?
+                     </button>
+                  </h2>
+               </div>
+               <div id="collapseFor" class="collapse" aria-labelledby="headingFor" data-parent="#perguntas">
+                  <div class="card-body">
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae impedit sequi ullam voluptatum ducimus sit aut unde, eius dolorum.
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div>
+               <div class="card-header" id="headingFive">
+                  <h2 class="mb-0">
+                     <button class="btn btn-link btn-clock text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Vocês dão desconto para grupos grandes?
+                     </button>
+                  </h2>
+               </div>
+               <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#perguntas">
+                  <div class="card-body">
+                     <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae impedit sequi ullam voluptatum ducimus sit aut unde, eius dolorum.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="text-center my-4">
+         <p class="small m-1">Fale conosco para mais dúvidas</p>
+         <a class="btn b" t"n-primary btn-lg" href="contato.html">Entre em Contato</a>
+      </div>
+   </section>
+
+   <footer class="bg-dark mt-5 text-white">
+      <div class="container py-4">
+         <div class="row">
+            <div class="col-md-3 col-6">
+               <h4 class="h6">PÁGINAS</h4>
+               <ul class="list-unstyled">
+                  <li><a href="planos.html">Planos</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                  <li><a href="inscricao.html">Inscreva-se</a></li>
+               </ul>
+            </div>
+
+            <div class="col-md-3 col-6">
+               <h4 class="h6">LOCAIS</h4>
+               <ul class="list-unstyled">
+                  <li><a href="local.html">California</a></li>
+                  <li><a href="local.html">Paris</a></li>
+                  <li><a href="local.html">Dublin</a></li>
+               </ul>
+            </div>
+
+            <div class="col-md-4 col-6">
+               <h4 class="h6">DADOS DE CONTATO</h4>
+               <ul class="list-unstyled text-secondary">
+                  <li>caravan@caravan.com.br</li>
+                  <li>21 9999-9999</li>
+                  <li>De Seg. à Sex. das 8h às 18h</li>
+               </ul>
+            </div>
+            <div class="col-md-2 col-6">
+               <h4 class="h6">REDES SOCIAIS</h4>
+               <ul class="list-unstyled">
+                  <li><a href="#" class="btn btn-outline-secondary btn-sm btn-block mb-2" style="max-width:140px;">Facebook</a></li>
+                  <li><a href="#" class="btn btn-outline-secondary btn-sm btn-block mb-2" style="max-width:140px;">Twitter</a></li>
+                  <li><a href="#" class="btn btn-outline-secondary btn-sm btn-block" style="max-width:140px;">Instagram</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="bg-primary text-center py-3">
+         <p class="mb-0">Caravan @ 2017. Alguns direitos reservados.</p>
+      </div>
+   </footer>
+
+   <script src="/js/jquery.slim.min.js"></script>
+   <script src="/js/popper.min.js"></script>
+   <script src="/js/bootstrap.js"></script>
+   <script src="/js/app.js"></script>
+</body>
+
+</html>
